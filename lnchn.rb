@@ -78,6 +78,7 @@ if ARGV[0] == "view"
     e.each_line { |thread_content_line|
        thread_content_json = JSON.parse(thread_content_line)
        for i in 0...thread_content_json['posts'].count
+      # puts thread_content_json['posts'][i]['com'][0..100].gsub(/\s\w+\s*$/, '...').gsub("&gt;&gt;", "").gsub('<a onclick="highlightReply(\'', '>>').gsub("&gt;", ">").gsub('<span class="quote">', '').colorize(:yellow)
       puts thread_content_json['posts'][i]['com'][0..100].gsub(/\s\w+\s*$/, '...').sub(/<("[^"]*"|'[^']*'|[^'">])*>/, '').colorize(:yellow)
 
      end

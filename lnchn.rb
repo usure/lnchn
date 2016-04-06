@@ -79,7 +79,6 @@ if ARGV[0] == "view"
        thread_content_json = JSON.parse(thread_content_line)
        for i in 0...thread_content_json['posts'].count
       puts thread_content_json['posts'][i]['com'][0..100].gsub(/\s\w+\s*$/, '...').sub(/<("[^"]*"|'[^']*'|[^'">])*>/, '').colorize(:yellow)
-
      end
      }
    }

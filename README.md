@@ -10,8 +10,6 @@ lnchn is a small command line reader for the imageboard [lainchan](https://lainc
 
 ### dependencies
 
-Dillinger uses a number of open source projects to work properly:
-
 * ```(sudo) gem install colorize``` [[colorize](https://github.com/fazibear/colorize)]
 
 ### guide
